@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #000000;
+    --text-color: #F6F6F6;
+    --primary-color: #22D4FD;
+    --button-hover: #272727;
+}
+
+body{
+    font-family: "Montserrat", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.page{
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+header{
+    padding: 2% 0 0 15%;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-item{
+    padding: .625rem .9375rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+h1{
+    font-family: "Krona One", serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+
+span{
+    color: var(--primary-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+.info-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info-container .text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.button{
+    width: 17.5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    background-color: transparent;
+    border: .125rem solid var(--primary-color);
+    border-radius: .5rem;
+    align-items: center;
+    font-weight: 600;
+    gap: 1rem;
+}
+
+.button:hover{
+    background-color: var(--button-hover);
+}
+
+.image{
+    width: 50%;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    header{
+        padding: 2% 0;
+    }
+    .nav-menu{
+        justify-content: center;
+    }
+    .page{
+        padding: 5%;
+        flex-direction: column-reverse;
+    }
+    .image, .info-container{
+        width: 100%;
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+}
